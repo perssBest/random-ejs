@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "monospace"; 
+    src: url("fonts/monospace.ttf") format("ttf"); 
+} 
+
+body {
+    background: #181a1b;
+}
+
+.main {
+    font-family: monospace;
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#shadowBox {
+    text-decoration: none !important;
+}
+
+a, a:hover, a:visited, a:link, a:active{
+    text-decoration: none !important;
+    color: #747a7ca4;
+}
+  
+.rainbow {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 32px;
+  font-family: monospace;
+  letter-spacing: 5px;
+  animation: colorRotate 6s linear 0s infinite;
+}
+  
+  @keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+  }
+
+
+#footer {
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    position: fixed;
+    left: 0; 
+    bottom: 0;
+    padding: 10px;
+    color: white;
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    font-size: 35px;
+  }
+  
+  #footer {
+    font-size: 10px;
+  }
+}
